@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>Formulaire de Paiement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- formulaire -->
+
+    <h1>Formulaire de Paiement</h1>
+
+<!-- le form -->
+    <div class="contact_form">
+
+        <form > 
+        <div class="service-options">
+             <input type="text" id="montant" placeholder="Montant à payer" required>
+            <span class="service-label">Moyen de paiement:</span>
+            <label>
+                <input type="radio" name="service" value="visa" required>Visa
+            </label>
+            <label>
+                <input type="radio" name="service" value="Airtel Money">Airtel Moyen
+            </label>
+            <label>
+                <input type="radio" name="service" value="Mobile Cash"> Mobile Cash
+            </label> 
+        </div>
+        <br><br>
+        
+        <div class="form-row">
+                    <input type="text" placeholder="Nom du client">
+                    <input type="email" placeholder="E-mail"> 
+                    <br> <br>
+        </div>
+        <div>
+            <input type="text" id="nom" placeholder="Téléphone" required>
+            <label for="numero_carte"></label>
+            <input type="text" id="numero_carte" placeholder="Numéro de la carte" required>
+        </div>
+        <div>
+            <label for="date_expiration"></label>
+            <input type="text" id="date_expiration" placeholder="Date d'expiration carte (MM/AA)" required>
+
+            <label for="code_securite"></label>
+            <input type="text" id="code_securite" placeholder="Code de sécurite" required><br><br>
+        </div>
+
+        <div>
+            <textarea placeholder="Message"></textarea>
+            <label for="joindr">Joindre:</label>
+            <select id="joindre" placeholder="joindre">
+                <a href=""><option placeholder="visa">Télécharger Document</option></a>
+                <a href=""><option value="airtel money">Télécharger Image</option></a>
+                <a href=""><option value="mobile cash">Télécharger Fichier</option></a>  
+                <label for="Fichier"></label>
+            </select> <br> <br>
+        </div>
+
+        
+        <a href="../index.html"><input type="submit" value="Envoyer"></a>
+        <a href="../index.htm"><input type="submit" value="Annuler"></a>
+    </form><br> <br>
+
+    </div>
+</body>
+</html>
